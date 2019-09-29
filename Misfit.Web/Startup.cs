@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -7,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Misfit.Data;
 using Misfit.Manager;
+using Misfit.Web.Mappers;
 
 namespace Misfit.Web
 {
@@ -79,13 +81,13 @@ namespace Misfit.Web
             services.AddScoped<IUserResultRepository, UserResultRepository>();
             services.AddScoped<MisfitDbContext>();
 
-            /*automapper configuration setup
+            //automapper configuration setup
             var mappingConfig = new MapperConfiguration(mc =>
             {
-                mc.AddProfile(new AutomapperMapping());
+                mc.AddProfile(new MisfitMapping());
             });
             IMapper mapper = mappingConfig.CreateMapper();
-            services.AddSingleton(mapper);*/
+            services.AddSingleton(mapper);
         }
     }
 }
