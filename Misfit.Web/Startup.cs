@@ -74,7 +74,10 @@ namespace Misfit.Web
         private void RegisterServices(IServiceCollection services)
         {
             services.AddScoped<IMisfitNumberManager, MisfitNumberManager>();
-            services.AddScoped<IMisfitNumberRepository, MisfitNumberRepository>();
+            services.AddScoped<IUserManager, UserManager>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserResultRepository, UserResultRepository>();
+            services.AddScoped<MisfitDbContext>();
 
             /*automapper configuration setup
             var mappingConfig = new MapperConfiguration(mc =>

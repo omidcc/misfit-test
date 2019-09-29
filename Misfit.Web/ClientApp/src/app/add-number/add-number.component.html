@@ -3,17 +3,23 @@
     <h4 class="card-title">Add number</h4>
 
     <form class="was-validated">
+      
       <div class="form-group">
         <label for="firstnumber">First Number:</label>
-        <input type="text" class="form-control" id="firstnumber" required>
+        <input type="text" class="form-control" id="firstnumber" placeholder="Write first number here" required>
         <div class="invalid-feedback">Please fill out first number field.</div>
       </div>
       <div class="form-group">
         <label for="pwd">Second Number:</label>
-        <input type="password" class="form-control" id="pwd" required>
+        <input type="password" class="form-control" id="pwd" placeholder="Write second number here" required>
         <div class="invalid-feedback">Please fill out second number field.</div>
       </div>
-      
+      <div class="form-group">
+        <label for="username">User Name:</label>
+        <input type="text" class="form-control" id="username" placeholder="Write user name here" required>
+        <div class="invalid-feedback">Please fill out first number field.</div>
+      </div>
+
       <button type="submit" class="btn btn-primary">Add</button>
     </form>
   </div>
