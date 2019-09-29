@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Manager", "Misfit.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Data", "Misfit.Data\Misfit.Data.csproj", "{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Test", "Misfit.Test\Misfit.Test.csproj", "{16177CC9-AC58-4777-90C5-00A1D122B30E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x64.Build.0 = Release|Any CPU
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x86.Build.0 = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x64.Build.0 = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x86.Build.0 = Debug|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x64.ActiveCfg = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x64.Build.0 = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x86.ActiveCfg = Release|Any CPU
+		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

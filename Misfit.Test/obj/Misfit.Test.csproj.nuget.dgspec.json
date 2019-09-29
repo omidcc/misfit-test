@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/omi/Desktop/misfit/misfit-test/Misfit.Test/Misfit.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/omi/Desktop/misfit/misfit-test/Misfit.Test/Misfit.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/omi/Desktop/misfit/misfit-test/Misfit.Test/Misfit.Test.csproj",
+        "projectName": "Misfit.Test",
+        "projectPath": "/Users/omi/Desktop/misfit/misfit-test/Misfit.Test/Misfit.Test.csproj",
+        "packagesPath": "/Users/omi/.nuget/packages/",
+        "outputPath": "/Users/omi/Desktop/misfit/misfit-test/Misfit.Test/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/omi/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
