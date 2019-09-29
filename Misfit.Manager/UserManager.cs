@@ -48,7 +48,12 @@ namespace Misfit.Manager
 
         public User SaveUser(User user)
         {
-            return _UserRepository.Add(user);
+            var existingUser = GetUserByName(user.UserName);
+            User saveduser = new User();
+            
+            saveduser = existingUser!=null? existingUser : _UserRepository.Add(user);
+            
+            return saveduser;
         }
 
         public UserResult SaveUserResult(UserResult userResult)
