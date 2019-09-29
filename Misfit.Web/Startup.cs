@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Misfit.Data;
+using Misfit.Manager;
 
 namespace Misfit.Web
 {
@@ -27,6 +29,8 @@ namespace Misfit.Web
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,6 +70,19 @@ namespace Misfit.Web
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+        }
+        private void RegisterServices(IServiceCollection services)
+        {
+            services.AddScoped<IMisfitNumberManager, MisfitNumberManager>();
+            services.AddScoped<IMisfitNumberRepository, MisfitNumberRepository>();
+
+            /*automapper configuration setup
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutomapperMapping());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);*/
         }
     }
 }
