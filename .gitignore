@@ -1,0 +1,11 @@
+.DS_Store
+/.vs
+/Misfit.Web/bin
+/Misfit.Web/obj
+/Misfit.Web/ClientApp/dist
+/Misfit.Manager/obj
+/Misfit.Manager/bin
+/Misfit.Data/bin
+/Misfit.Data/obj
+/Misfit.Model/bin
+/Misfit.Model/obj
