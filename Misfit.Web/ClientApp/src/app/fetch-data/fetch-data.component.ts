@@ -14,12 +14,19 @@ export class FetchDataComponent {
     { headerName: 'Second Number', field: 'secondNumber', sortable: true, filter: false },
     { headerName: 'Sum', field: 'sum', sortable: true, filter: false },
     {
-      headerName: 'Date', field: 'dateOfCalculation', sortable: true, filter: true,
-      cellRenderer: (data) => {
-        return data.value //? (new Date(data.value)).toDateString() : '';
+      headerName: 'Date', field: 'dateOfCalculation', sortable: true, filter: "agTextColumnFilter", filterParams: {
+        clearButton: true,
+        applyButton: true,
+        debounceMs: 200
       }
     },
-    { headerName: 'User', field: 'user.userName', sortable: true, filter: true },
+    {
+      headerName: 'User', field: 'user.userName', sortable: true, filter: "agTextColumnFilter", filterParams: {
+        clearButton: true,
+        applyButton: true,
+        debounceMs: 200
+      }
+     },
   ];
 
   rowData = [];
@@ -30,6 +37,9 @@ export class FetchDataComponent {
   ngOnInit() {
     this.usernumberService.getAllResults().subscribe(result => {
       console.log(result);
+      result.forEach((item) => {
+        item.dateOfCalculation = item.dateOfCalculation.substring(0,10);
+      });
       this.rowData = result;
     }, error => {
         console.log(error);

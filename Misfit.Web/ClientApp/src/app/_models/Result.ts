@@ -6,7 +6,7 @@ export class Result {
   firstNumber: string;
   secondNumber: string;
   sum: string;
-  dateOfCalculation: Date;
+  dateOfCalculation: string;
   user: User;
   username: string;
 
