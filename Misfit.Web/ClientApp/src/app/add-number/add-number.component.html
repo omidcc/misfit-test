@@ -2,25 +2,29 @@
   <div class="card-body">
     <h4 class="card-title">Add number</h4>
 
-    <form class="was-validated">
-      
+    <form [ngClass]="validationClass">
+
       <div class="form-group">
-        <label for="firstnumber">First Number:</label>
-        <input type="text" class="form-control" id="firstnumber" placeholder="Write first number here" required>
+        <label for="firstNumber">First Number:</label>
+        <input type="number" class="form-control" id="firstNumber" name="firstNumber" placeholder="Write first number here" required="required" [(ngModel)]="result.firstNumber">
         <div class="invalid-feedback">Please fill out first number field.</div>
       </div>
       <div class="form-group">
-        <label for="pwd">Second Number:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Write second number here" required>
+        <label for="secondNumber">Second Number:</label>
+        <input type="number" class="form-control" id="secondNumber" name="secondNumber" placeholder="Write second number here" required="required" [(ngModel)]="result.secondNumber">
         <div class="invalid-feedback">Please fill out second number field.</div>
       </div>
       <div class="form-group">
-        <label for="username">User Name:</label>
-        <input type="text" class="form-control" id="username" placeholder="Write user name here" required>
+        <label for="userName">User Name:</label>
+        <input type="text" class="form-control" id="userName" name="userName" placeholder="Write user name here" required="required" [(ngModel)]="user.userName">
         <div class="invalid-feedback">Please fill out first number field.</div>
       </div>
 
-      <button type="submit" class="btn btn-primary">Add</button>
+      <input type="button" class="btn btn-primary active" value="Save" (click)="saveUserResult()" />
     </form>
   </div>
+</div>
+
+<div [ngClass]="loadClass">
+  <div class="loader"></div>
 </div>
