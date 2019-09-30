@@ -21,7 +21,7 @@ import { AddNumberComponent } from './add-number/add-number.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
