@@ -19,6 +19,7 @@ namespace Misfit.Web.Mappers
                 .ForMember(d => d.FirstNumber, opt => opt.MapFrom(s => s.FirstNumber))
                 .ForMember(d => d.SecondNumber, opt => opt.MapFrom(s => s.SecondNumber))
                 .ForMember(d => d.Sum, opt => opt.MapFrom(s => s.Sum))
+                .ForMember(d => d.DateOfCalculation, opt => opt.MapFrom(s => s.DateOfCalculation))
                 .ForMember(d => d.User, opt => opt.MapFrom(s => s.User))
                 .ReverseMap();
         }

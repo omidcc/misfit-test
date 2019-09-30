@@ -25,7 +25,7 @@ namespace Misfit.Web.Controllers
         }
 
         [HttpPost("result")]
-        public IActionResult SaveUserResult(ResultViewModel resultViewModel)
+        public IActionResult SaveUserResult([FromBody]ResultViewModel resultViewModel)
         {
             try
             {
@@ -38,6 +38,7 @@ namespace Misfit.Web.Controllers
                 if (user != null)
                 {
                     resultViewModel.User.Id = user.Id;
+                    resultViewModel.DateOfCalculation = DateTime.Now;
                     var userResult = _UserManager.SaveUserResult(_Mapper.Map<UserResult>(resultViewModel));
                     resultViewModel.User.UserName = userResult.User.UserName;
                 }

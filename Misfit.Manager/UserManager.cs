@@ -8,9 +8,9 @@ namespace Misfit.Manager
 {
     public class UserManager : IUserManager
     {
-        private IUserRepository _UserRepository;
-        private IUserResultRepository _UserResultRepository;
-        public UserManager(IUserRepository userRepository, IUserResultRepository userResultRepository)
+        private UserRepository _UserRepository;
+        private UserResultRepository _UserResultRepository;
+        public UserManager(UserRepository userRepository, UserResultRepository userResultRepository)
         {
             _UserRepository = userRepository;
             _UserResultRepository = userResultRepository;

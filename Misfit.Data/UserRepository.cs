@@ -6,7 +6,7 @@ using Misfit.Model;
 
 namespace Misfit.Data
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : BaseRepository<User>
     {
         private MisfitDbContext _MisfitDbContext;
         public UserRepository(MisfitDbContext misfitDbContext)
@@ -14,29 +14,5 @@ namespace Misfit.Data
             _MisfitDbContext = misfitDbContext;
         }
 
-        public User Add(User user)
-        {
-            return Add(user);
-        }
-
-        public IQueryable<User> FindBy(Expression<Func<User, bool>> predicate)
-        {
-            return FindBy(predicate);
-        }
-
-        public IQueryable<User> GetAll()
-        {
-            return GetAll();
-        }
-
-        public User GetById(int id)
-        {
-            return GetById(id);
-        }
-
-        public User Update(User user)
-        {
-            return Update(user);
-        }
     }
 }

@@ -77,8 +77,8 @@ namespace Misfit.Web
         {
             services.AddScoped<IMisfitNumberManager, MisfitNumberManager>();
             services.AddScoped<IUserManager, UserManager>();
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IUserResultRepository, UserResultRepository>();
+            services.AddScoped<UserRepository>();
+            services.AddScoped<UserResultRepository>();
             services.AddScoped<MisfitDbContext>();
 
             //automapper configuration setup

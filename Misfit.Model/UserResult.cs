@@ -1,6 +1,9 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Misfit.Model
 {
+    [Table("UserResult")]
     public class UserResult : BaseEntity
     {
         public UserResult()
