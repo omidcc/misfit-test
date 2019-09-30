@@ -13,6 +13,7 @@ namespace Misfit.Model
         public string SecondNumber { get; set; }
         public string Sum { get; set; }
         public DateTime DateOfCalculation { get; set; }
+        public int UserId { get; set; }
         public virtual User User { get; set; }
     }
 }

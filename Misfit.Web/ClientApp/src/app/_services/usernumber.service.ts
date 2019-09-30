@@ -15,5 +15,10 @@ export class UsernumberService {
     return this.http.post<Result>('/api/v1/misfit/result', result);
   }
 
+  getAllResults() {
+    return this.http.get<Result[]>('/api/v1/misfit/results');
+
+  }
+
  
 }

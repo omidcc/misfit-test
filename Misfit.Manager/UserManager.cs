@@ -23,7 +23,20 @@ namespace Misfit.Manager
 
         public IList<UserResult> GetAllUserResults()
         {
-            return _UserResultRepository.GetAll().ToList();
+            var results = (from result in _UserResultRepository.GetAll()
+                           join user in _UserRepository.GetAll()
+                           on result.UserId equals user.Id
+                           select new UserResult
+                           {
+                               Id = result.Id,
+                               FirstNumber = result.FirstNumber,
+                               SecondNumber = result.SecondNumber,
+                               Sum = result.Sum,
+                               DateOfCalculation = result.DateOfCalculation,
+                               UserId = user.Id,
+                               User = user
+                           }).ToList();
+            return results;
         }
 
         public IList<User> GetAllUsers()

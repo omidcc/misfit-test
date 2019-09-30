@@ -16,7 +16,7 @@ namespace Misfit.Data
                 .Build();
             optionsBuilder.UseSqlServer(configuration.GetConnectionString("MisfitConnection"));
         }
-
+     
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserResult> UserResults { get; set; }
     }

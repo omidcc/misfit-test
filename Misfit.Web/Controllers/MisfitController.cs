@@ -51,5 +51,20 @@ namespace Misfit.Web.Controllers
             }
             return BadRequest("Could not save result");
         }
+
+        [HttpGet("results")]
+        public IActionResult GetResults()
+        {
+            try
+            {
+               var results = _UserManager.GetAllUserResults();
+                return Ok(_Mapper.Map<List<ResultViewModel>>(results)); 
+            }
+            catch (Exception ex)
+            {
+                var error = ex.Message;
+            }
+            return BadRequest("Could not get result");
+        }
     }
 }
