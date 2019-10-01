@@ -45,10 +45,12 @@ export class FetchDataComponent {
         item.dateOfCalculation = item.dateOfCalculation.substring(0,10);
       });
       this.rowData = result;
+      this.toggleLoader();
     }, error => {
         console.log(error);
+        this.toggleLoader();
       });
-    this.toggleLoader();
+    
   }
 
   toggleLoader() {
