@@ -1,17 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Web", "Misfit.Web\Misfit.Web.csproj", "{0D68273C-8E5C-47CA-AF10-8D0122019F0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misfit.Web", "Misfit.Web\Misfit.Web.csproj", "{0D68273C-8E5C-47CA-AF10-8D0122019F0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Model", "Misfit.Model\Misfit.Model.csproj", "{80B79389-A533-4DB4-8CEA-953E96818B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misfit.Model", "Misfit.Model\Misfit.Model.csproj", "{80B79389-A533-4DB4-8CEA-953E96818B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Manager", "Misfit.Manager\Misfit.Manager.csproj", "{CB73ED56-6B91-43CD-B28B-0D78492E1088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misfit.Manager", "Misfit.Manager\Misfit.Manager.csproj", "{CB73ED56-6B91-43CD-B28B-0D78492E1088}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Data", "Misfit.Data\Misfit.Data.csproj", "{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Misfit.Test", "Misfit.Test\Misfit.Test.csproj", "{16177CC9-AC58-4777-90C5-00A1D122B30E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Misfit.Data", "Misfit.Data\Misfit.Data.csproj", "{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0D68273C-8E5C-47CA-AF10-8D0122019F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -74,17 +69,11 @@ Global
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x64.Build.0 = Release|Any CPU
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E519881-F89D-46FB-AB8B-D67CCEC2E9A3}.Release|x86.Build.0 = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x64.Build.0 = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Debug|x86.Build.0 = Debug|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x64.ActiveCfg = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x64.Build.0 = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x86.ActiveCfg = Release|Any CPU
-		{16177CC9-AC58-4777-90C5-00A1D122B30E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15CCC5A4-25BE-47E4-9806-D626654D9EF7}
 	EndGlobalSection
 EndGlobal
