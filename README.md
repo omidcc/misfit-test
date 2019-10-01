@@ -1,6 +1,6 @@
 # misfit-test
 
-Misfit-test is a demo project for adding two big number that doesn't fit in .NET data type. This project is built on top of .NET Core 2.2, Angular 8 and MSSQL. Sql Server version is 2019.
+Misfit-test is a demo project for adding two big number that doesn't fit in .NET data type. This project is built on top of .NET Core 2.2, EF Core 2.2 (ORM), Angular 8 and MSSQL. Sql Server version is 2019. xUnit is used for Unit Test. Automapper is used to map between view objects and entity objects. 
 Angular grid is implemented using ag-grid. Bootstrap v4.3.1 is used to style the markup. 
 Please follow the bewlow steps to clone, setup and run the project
 
@@ -21,16 +21,18 @@ Open the file in a text editor. That looks like below:
 Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password. Finally save changes.
 
 #### 4. Install node packages
-Go to inside misfit/Misfit.Web/ClientApp and run following command in console. This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed. Incase node not installed [download here](https://nodejs.org/en/download/).
+Go to inside misfit/Misfit.Web/ClientApp and run following command in console. 
 ```
 npm install
 ```
+This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed. Incase node not installed [download here](https://nodejs.org/en/download/).
+
 ### 5. Run the project
 Go to inside misfit/Misfit.Web and run following command in console. 
 ```
 dotnet run
 ```
-This will build and start both angular and .NET Core API project. Make sure you have .NET Core SDK V2.2. Incase .NET Core SDK  2.2 is not installed [download here](https://dotnet.microsoft.com/download/dotnet-core/2.2). If successfully build then the there willbe a message showing in the console stating the below lines.
+This will build and start both angular and .NET Core API project. Make sure you have .NET Core SDK V2.2. Incase .NET Core SDK  2.2 is not installed [download here](https://dotnet.microsoft.com/download/dotnet-core/2.2). If project is successfully build then there willbe a message showing in the console stating the below lines.
 ```info: Microsoft.AspNetCore.SpaServices[0]
       Starting @angular/cli on port 53885...
 Hosting environment: Development
