@@ -32,7 +32,7 @@ Go to inside misfit/Misfit.Web and run following command in console.
 ```
 dotnet run
 ```
-This will build and start both angular and .NET Core API project. Make sure you have .NET Core SDK v2.2 installed. To check if dotnet installed run "dotnet --info" from console, it will show the version of .NET sdk and runtime installed. Incase .NET Core SDK  2.2 is not installed [download here](https://dotnet.microsoft.com/download/dotnet-core/2.2). If project is successfully build then there willbe a message showing in the console stating the below lines.
+This will build and start both angular and .NET Core API project. Make sure you have .NET Core SDK v2.2 installed. To check if dotnet installed run "dotnet --info" from console, it will show the version of .NET sdk and runtime installed. Incase .NET Core SDK  2.2 is not installed [download here](https://dotnet.microsoft.com/download/dotnet-core/2.2). If project is successfully build then following messages willl be shown on console.
 ```info: Microsoft.AspNetCore.SpaServices[0]
       Starting @angular/cli on port 53885...
 Hosting environment: Development
