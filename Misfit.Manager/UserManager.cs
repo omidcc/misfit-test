@@ -16,11 +16,6 @@ namespace Misfit.Manager
             _UserResultRepository = userResultRepository;
         }
 
-        public IList<UserResult> FindUserResultByUser(int userId)
-        {
-            return GetAllUserResults().Where(x => x.User.Id == userId).ToList();
-        }
-
         public IList<UserResult> GetAllUserResults()
         {
             var results = (from result in _UserResultRepository.GetAll()
@@ -44,19 +39,9 @@ namespace Misfit.Manager
             return _UserRepository.GetAll().ToList();
         }
 
-        public User GetUserById(int id)
-        {
-            return GetAllUsers().SingleOrDefault(x => x.Id == id);
-        }
-
         public User GetUserByName(string username)
         {
             return GetAllUsers().SingleOrDefault(x => x.UserName == username);
-        }
-
-        public UserResult GetUserResultById(int id)
-        {
-            return GetAllUserResults().Where(x => x.Id == id).SingleOrDefault();
         }
 
         public User SaveUser(User user)
@@ -72,11 +57,6 @@ namespace Misfit.Manager
         public UserResult SaveUserResult(UserResult userResult)
         {
             return _UserResultRepository.Add(userResult);
-        }
-
-        public User UpdateUser(User user)
-        {
-            return _UserRepository.Update(user);
         }
 
     }
