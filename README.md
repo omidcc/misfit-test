@@ -21,7 +21,7 @@ Open the file in a text editor. That looks like below:
 Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password. Finally save changes.
 
 #### 4. Install node packages
-Go to inside misfit/Misfit.Web/ClientApp and run following command in console. This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed. Incase node not install [download here](https://nodejs.org/en/download/).
+Go to inside misfit/Misfit.Web/ClientApp and run following command in console. This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed. Incase node not installed [download here](https://nodejs.org/en/download/).
 ```
 npm install
 ```
