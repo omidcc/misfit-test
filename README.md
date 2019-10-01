@@ -16,7 +16,7 @@ Inside misfit folder there is another folder called "DbScript". Open the script 
 Inside misfit>Misfit.Web project there is a appsettings.json file. 
 Open the file in a text editor. That looks like below:
 ```
-json"MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
+"MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
 ```
 Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password
 
