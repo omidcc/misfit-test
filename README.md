@@ -18,7 +18,7 @@ Open the file in a text editor. That looks like below:
 ```
 "MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
 ```
-Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password
+Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password. Finally save changes.
 
 #### 4. Install node packages
 Go to inside misfit/Misfit.Web/ClientApp and run following command in console. This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed.
