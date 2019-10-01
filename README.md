@@ -68,6 +68,8 @@ Now replace your desired port with 5001 and save changes. And then again run the
 For the application demonstration see the images in [HomePage](https://github.com/omidcc/misfit-test/blob/master/home.png) and  [Results Page](https://github.com/omidcc/misfit-test/blob/master/results.png). To see the image scroll horizontally or download.
 
 If there is any issue occured running the project setup contact me through -
-Email & Skype - khairulomi@gmail.com
+Email & Skype - khairulomi@gmail.com. 
+
+**Please Don't get confused seeing one other contributor.That khairulislamsp is also me.Had to update from that account due to permission issue on that particular network.
 
 
