@@ -34,7 +34,6 @@ namespace Misfit.Test
             _NumberManager = new Mock<IMisfitNumberManager>();
             _Mapper = new Mock<IMapper>();
             controller = new MisfitController(_UserManager.Object, _NumberManager.Object, _Mapper.Object);
-            //CreateDbContext();
             prepareMocModel();
         }
 
@@ -54,7 +53,6 @@ namespace Misfit.Test
                 }
 
             };
-            //AddUserResultToDb(MocResultViewModel);
 
         }
 
@@ -68,7 +66,5 @@ namespace Misfit.Test
             Assert.Equal(200, okResult.StatusCode);
             Assert.IsType<ResultViewModel>(okResult.Value);
         }
-
-       
     }
 }
