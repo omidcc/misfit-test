@@ -59,6 +59,12 @@ Now open the following link in the browser.
 ```
 https://localhost:5001/
 ```
+NOTE: IF the project refused to run on port 5001 or there is already running a process on that port, then go to misfit/Misfit.Web/Properties. There is a json file named "launchSettings.json". Open the file in a text editor. Find The following line.
+```
+"applicationUrl": "https://localhost:5001;http://localhost:5000"
+```
+Now replace your desired port with 5001 and save changes. And then again run the project follwoing step 5 first paragraph.
+
 If there is any issue occured running the project setup contact me through -
 Email & Skype - khairulomi@gmail.com
 
