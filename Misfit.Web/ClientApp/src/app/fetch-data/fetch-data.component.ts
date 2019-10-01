@@ -9,6 +9,9 @@ import { error } from 'protractor';
   templateUrl: './fetch-data.component.html'
 })
 export class FetchDataComponent {
+  loadClass: string = "d-none";
+  showLoader: boolean = false;
+
   columnDefs = [
     { headerName: 'First Number', field: 'firstNumber', sortable: true, filter: false },
     { headerName: 'Second Number', field: 'secondNumber', sortable: true, filter: false },
@@ -35,6 +38,7 @@ export class FetchDataComponent {
     
   }
   ngOnInit() {
+    this.toggleLoader();
     this.usernumberService.getAllResults().subscribe(result => {
       console.log(result);
       result.forEach((item) => {
@@ -44,5 +48,11 @@ export class FetchDataComponent {
     }, error => {
         console.log(error);
       });
+    this.toggleLoader();
+  }
+
+  toggleLoader() {
+    this.showLoader = !this.showLoader;
+    this.loadClass = this.showLoader ? "d-block" : "d-none";
   }
 }
