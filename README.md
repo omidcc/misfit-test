@@ -25,7 +25,7 @@ Go to inside misfit/Misfit.Web/ClientApp and run following command in console.
 ```
 npm install
 ```
-This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed. Incase node not installed [download here](https://nodejs.org/en/download/).
+This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed.   To check if node is installed run "node -v" into console. Incase node not installed [download here](https://nodejs.org/en/download/).
 
 ### 5. Run the project
 Go to inside misfit/Misfit.Web and run following command in console. 
