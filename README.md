@@ -15,17 +15,20 @@ Inside misfit folder there is another folder called "DbScript". Open the script 
 #### 3. Connection string change
 Inside misfit>Misfit.Web project there is a appsettings.json file. 
 Open the file in a text editor. That looks like below:
-```json"MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
+```
+json"MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
 ```
 Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password
 
 #### 4. Install node packages
 Go to inside misfit/Misfit.Web/ClientApp and run following command in console. This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed.
-```npm install
+```
+npm install
 ```
 ### 5. Run the project
 Go to inside misfit/Misfit.Web and run following command in console. 
-```dotnet run
+```
+dotnet run
 ```
 This will build and start both angular and .NET Core API project. Make sure you have .NET Core SDK V2.2. If successfully build then the there willbe a message showing in the console stating the below lines.
 ```info: Microsoft.AspNetCore.SpaServices[0]
@@ -53,7 +56,8 @@ chunk {vendor} vendor.js, vendor.js.map (vendor) 6.11 MB [initial] [rendered]
 i ｢wdm｣: Compiled successfully.
 ```
 Now open the following link in the browser.
-```https://localhost:5001/
+```
+https://localhost:5001/
 ```
 If there is any issue occured running the project setup contact me through -
 Email & Skype - khairulomi@gmail.com
