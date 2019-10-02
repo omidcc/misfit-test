@@ -27,7 +27,10 @@ npm install
 ```
 This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed.   To check if node is installed run "node -v" into console. Incase node not installed [download here](https://nodejs.org/en/download/).
 
-### 5. Run the project
+### 5. Run unit test
+Open Misfit.sln file in visual studio(For my case vs2019). From menu select Test>Windows>Test Explorer. New Test Explorer will appear. From top left click green colored RUN ALL button to run the test.
+
+### 6. Run the project
 Go to inside misfit/Misfit.Web and run following command in console. 
 ```
 dotnet run
