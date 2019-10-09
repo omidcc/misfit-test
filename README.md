@@ -10,10 +10,10 @@ Create a folder in your machine and clone the repo using the following command t
     $ git clone https://github.com/omidcc/misfit-test.git
 
 #### 2. Database preperation
-Inside misfit folder there is another folder called "DbScript". Open the script in sql server management studio. press ctrl+a to select the entire script and execute the query. Now refresh the database names. There will be a new database appearing named "KhairulMisfitTestDB".
+Inside "misfit-test" folder there is another folder called "DbScript". Open the script in sql server management studio. press ctrl+a to select the entire script and execute the query. Now refresh the database names. There will be a new database appearing named "KhairulMisfitTestDB".
 
 #### 3. Connection string change
-Inside misfit>Misfit.Web project there is a appsettings.json file. 
+Inside /misfit-test/Misfit.Web project there is a appsettings.json file. 
 Open the file in a text editor. That looks like below:
 ```
 "MisfitConnection": "data source=localhost; initial catalog=KhairulMisfitTestDB;persist security info=True; User ID=YourDBUserID;Password=YourDbPassword;"
@@ -21,17 +21,21 @@ Open the file in a text editor. That looks like below:
 Replace the "localhost" whith your host name or ip, "YourDBUserID" with your database userid and "YourDbPassword" with your datbase users password. Finally save changes.
 
 #### 4. Install node packages
-Go to inside misfit/Misfit.Web/ClientApp and run following command in console. 
+Go to inside /misfit-test/Misfit.Web/ClientApp and run following command in console. 
 ```
 npm install
 ```
 This will install necessary node packages to run the angular project. Make sure you have node v10.13.0 or higher installed.   To check if node is installed run "node -v" into console. Incase node not installed [download here](https://nodejs.org/en/download/).
 
 ### 5. Run unit test
-Open Misfit.sln file in visual studio(For my case vs2019). From menu select Test>Windows>Test Explorer. New Test Explorer will appear. From top left click green colored RUN ALL button to run the test.
+Open /misfit-test/Misfit.sln file in visual studio(For my case vs2019). From menu select Test>Windows>Test Explorer. New Test Explorer will appear. From top left click green colored RUN ALL button to run the test.
+To run the test using dotnet cli, go to misfit-test/Misfit.Test/ and run the following command from console or terminal.
+```
+dotnet test
+```
 
 ### 6. Run the project
-Go to inside misfit/Misfit.Web and run following command in console. 
+Go to inside /misfit-test/Misfit.Web and run following command in console. 
 ```
 dotnet run
 ```
@@ -64,7 +68,7 @@ Now open the following link in the browser.
 ```
 https://localhost:5001/
 ```
-NOTE: IF the project refused to run on port 5001 or there is already running a process on that port, then go to misfit/Misfit.Web/Properties. There is a json file named "launchSettings.json". Open the file in a text editor. Find The following line.
+NOTE: IF the project refused to run on port 5001 or there is already running a process on that port, then go to /misfit-test/Misfit.Web/Properties/. There is a json file named "launchSettings.json". Open the file in a text editor. Find The following line.
 ```
 "applicationUrl": "https://localhost:5001;http://localhost:5000"
 ```
