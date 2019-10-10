@@ -1,18 +1,11 @@
 using System;
 using Xunit;
-using Misfit.Data;
 using Misfit.Manager;
-using System.Net;
 using Misfit.Web.ViewModels;
 using Moq;
 using Misfit.Web.Controllers;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.InMemory;
-using Misfit.Model;
 
 namespace Misfit.Test
 {
@@ -44,7 +37,7 @@ namespace Misfit.Test
                 Id = 0,
                 FirstNumber = FirstNumber,
                 SecondNumber = SecondNumber,
-                Sum = _Utility.Sum(FirstNumber, SecondNumber),
+                Sum = _Utility.AddNumbers(FirstNumber, SecondNumber),
                 DateOfCalculation = DateTime.Now,
                 User = new UserViewModel
                 {

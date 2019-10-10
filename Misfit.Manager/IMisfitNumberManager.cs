@@ -3,6 +3,6 @@ namespace Misfit.Manager
 {
     public interface IMisfitNumberManager
     {
-        string Sum(string firstNumber, string secondNumber);
+        string AddNumbers(string firstNumber, string secondNumber);
     }
 }

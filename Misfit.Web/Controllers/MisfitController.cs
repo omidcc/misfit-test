@@ -33,7 +33,7 @@ namespace Misfit.Web.Controllers
                 {
                     return UnprocessableEntity("Required Validation failed!");
                 }
-                resultViewModel.Sum = _MisfitNumberManager.Sum(resultViewModel.FirstNumber, resultViewModel.SecondNumber);
+                resultViewModel.Sum = _MisfitNumberManager.AddNumbers(resultViewModel.FirstNumber, resultViewModel.SecondNumber);
                 var user = _UserManager.SaveUser(_Mapper.Map<User>(resultViewModel.User));
                 if (user != null)
                 {

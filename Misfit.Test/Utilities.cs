@@ -7,7 +7,7 @@ namespace Misfit.Test
 {
     public class Utilities
     {
-        public string Sum(string firstNumber, string secondNumber)
+        public string AddNumbers(string firstNumber, string secondNumber)
         {
             BigInteger num1 = new BigInteger();
             BigInteger num2 = new BigInteger();
