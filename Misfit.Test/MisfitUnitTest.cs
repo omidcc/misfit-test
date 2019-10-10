@@ -44,7 +44,7 @@ namespace Misfit.Test
                 Id = 0,
                 FirstNumber = FirstNumber,
                 SecondNumber = SecondNumber,
-                Sum = _Utility.Add(FirstNumber, SecondNumber),
+                Sum = _Utility.Sum(FirstNumber, SecondNumber),
                 DateOfCalculation = DateTime.Now,
                 User = new UserViewModel
                 {
